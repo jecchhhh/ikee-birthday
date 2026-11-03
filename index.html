@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Ike, With Love</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Dancing+Script:wght@500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="petal-container" id="petalContainer"></div>
+        <div class="ambient-glow"></div>
+    </div>
+
+    <div class="flower-confetti" id="flowerConfetti"></div>
+
+    <!-- ENVELOPE INTRO -->
+    <main class="intro-screen" id="introScreen">
+
+        <p class="intro-caption">a little something for you</p>
+
+        <button class="envelope-button" id="openEnvelope" aria-label="Open envelope">
+            <div class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="envelope-letter">
+                    <span>for ike</span>
+                </div>
+
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-heart">♡</div>
+
+            </div>
+        </button>
+
+        <p class="envelope-hint">click to open</p>
+
+    </main>
+
+
+    <!-- BOOK -->
+    <main class="book-screen" id="bookScreen">
+
+        <p class="book-caption">a little book made just for you</p>
+
+        <div class="book-stage">
+
+            <!-- FRONT COVER BEFORE OPENING -->
+            <div class="closed-cover" id="closedCover">
+
+                <img src="pages/page-01.jpg" alt="Birthday book cover">
+
+                <button id="openBook" aria-label="Open birthday book"></button>
+
+                <span class="cover-hint">click to open</span>
+
+            </div>
+
+
+            <!-- FLIPBOOK AND FINAL COVER BUTTON -->
+            <div class="book-display" id="bookDisplay">
+
+                <div class="book-mount" id="bookMount"></div>
+
+                <button id="readAgain" class="read-again-overlay">
+                    read again ♡
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOK CONTROLS -->
+        <div class="book-controls" id="bookControls">
+
+            <button id="previousPage" aria-label="Previous page">←</button>
+
+            <span id="pageCounter">Cover</span>
+
+            <button id="nextPage" aria-label="Next page">→</button>
+
+        </div>
+
+        <p class="bottom-note">made with love, just for you</p>
+
+    </main>
+
+
+    <!-- MUSIC -->
+    <audio id="backgroundMusic" src="music/slow-dance.mp3" loop preload="auto"></audio>
+
+
+    <!-- PAGE FLIP LIBRARY -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
